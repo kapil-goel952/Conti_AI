@@ -1,6 +1,6 @@
 import os
-import streamlit as st
-from openai import OpenAI, OpenAIError
+import streamlit as st # type: ignore
+from openai import OpenAI, OpenAIError # type: ignore
 
 
 # -------------------------------
