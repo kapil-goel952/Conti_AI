@@ -519,7 +519,7 @@ else:
 # =========================================================
 
 for chat in st.session_state.messages:
-    avatar = "🧑‍🚀" if chat["role"] == "user" else "✦"
+    avatar = "🧑‍🚀" if chat["role"] == "user" else "✨"
 
     with st.chat_message(chat["role"], avatar=avatar):
         st.markdown(chat["content"])
@@ -555,7 +555,7 @@ if prompt and prompt.strip():
         {"role": "user", "content": prompt}
     ]
 
-    with st.chat_message("assistant", avatar="✦"):
+    with st.chat_message("assistant", avatar="✨"):
         with st.spinner("Connecting to the neural network..."):
             try:
                 response = client.responses.create(
